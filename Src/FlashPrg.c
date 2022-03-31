@@ -8,7 +8,7 @@ File    : FlashPrg.c
 Purpose : Implementation of RAMCode template
 --------  END-OF-HEADER  ---------------------------------------------
 */
-#include "FlashOS.H"
+#include "FlashOS.h"
 #include "stm32h7_regs.h"
 #include "qspi.h"
 #include "gpio.h"
