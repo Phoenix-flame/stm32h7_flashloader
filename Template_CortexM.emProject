@@ -28,9 +28,15 @@
       linker_section_placement_file="$(ProjectDir)/Placement_release.xml" />
     <configuration
       Name="Debug"
+      arm_architecture="v7EM"
       arm_core_type="Cortex-M7"
+      arm_endian="Little"
+      arm_fpu_type="FPv5-SP-D16"
+      arm_target_device_name="Cortex-M7"
       c_preprocessor_definitions="STM32H750xx;VECT_TAB_SRAM"
       c_user_include_directories=".;./Src;./Src/hal"
+      debug_enable_RTT="No"
+      debug_target_connection="J-Link"
       gcc_optimization_level="None"
       linker_section_placement_file="$(ProjectDir)/Placement_debug.xml"
       project_type="Executable" />

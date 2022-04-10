@@ -8,7 +8,7 @@ File    : FlashPrg.c
 Purpose : Implementation of RAMCode template
 --------  END-OF-HEADER  ---------------------------------------------
 */
-#include "FlashOS.H"
+#include "FlashOS.h"
 #include "stm32h7_regs.h"
 #include "qspi.h"
 #include "gpio.h"
@@ -103,13 +103,16 @@ int Init(U32 Addr, U32 Freq, U32 Func) {
   // Init code
   //
   clock_setup();
+  
 
+  gpio_set_qspi(GPIOA_BASE,'H',2,GPIOx_PUPDR_NOPULL, 0x9);
+  gpio_set_qspi(GPIOA_BASE,'H',3,GPIOx_PUPDR_NOPULL, 0x9);
   gpio_set_qspi(GPIOA_BASE,'B',2,GPIOx_PUPDR_NOPULL, 0x9);
-  gpio_set_qspi(GPIOA_BASE,'B',6,GPIOx_PUPDR_NOPULL, 0xA);
-  gpio_set_qspi(GPIOA_BASE,'D',11,GPIOx_PUPDR_NOPULL, 0x9);
-  gpio_set_qspi(GPIOA_BASE,'D',12,GPIOx_PUPDR_NOPULL, 0x9);
-  gpio_set_qspi(GPIOA_BASE,'D',13,GPIOx_PUPDR_NOPULL, 0x9);
-  gpio_set_qspi(GPIOA_BASE,'E',2,GPIOx_PUPDR_NOPULL, 0x9);
+  gpio_set_qspi(GPIOA_BASE,'C',11,GPIOx_PUPDR_NOPULL, 0x9);
+  gpio_set_qspi(GPIOA_BASE,'G',9,GPIOx_PUPDR_NOPULL, 0x9);
+  gpio_set_qspi(GPIOA_BASE,'G',14,GPIOx_PUPDR_NOPULL, 0x9);
+  
+  gpio_set(GPIOA_BASE, 'B', 1, 0, GPIOx_MODER_MODERy_INPUT, GPIOx_OSPEEDR_OSPEEDRy_HIGH, GPIOx_PUPDR_NOPULL);
 
   quadspi_init(0, (void *)QUADSPI_BASE);
 

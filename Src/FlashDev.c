@@ -9,7 +9,7 @@ Purpose : Flash device description Template
 --------  END-OF-HEADER  ---------------------------------------------
 */
 
-#include "FlashOS.H"
+#include "FlashOS.h"
 
 struct FlashDevice const FlashDevice __attribute__ ((section ("DevDscr"))) =  {
   ALGO_VERSION,              // Algo version
