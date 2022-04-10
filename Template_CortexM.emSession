@@ -60,17 +60,17 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="116" useTextEdit="1" path="Src/FlashPrg.c" left="0" top="105" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="94" useTextEdit="1" path="Src/main.c" left="0" top="73" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="109" y="150" useTextEdit="1" path="Src/qspi_init.c" left="28" top="134" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="1" y="150" useTextEdit="1" openedFrom="/home/alireza/Programming/test/stm32h7_flashloader/Src/FlashPrg.c" path="Src/hal/qspi.c" left="0" selected="1" top="155" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="17" y="101" useTextEdit="1" path="Src/hal/qspi.h" left="0" top="80" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="75" y="46" useTextEdit="1" openedFrom="/home/alireza/Programming/test/stm32h7_flashloader/Src/qspi_init.c" path="Src/hal/gpio.c" left="0" top="45" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="116" useTextEdit="1" path="Src/FlashPrg.c" left="0" selected="1" top="243" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="94" useTextEdit="1" path="Src/main.c" left="0" top="62" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="109" y="150" useTextEdit="1" path="Src/qspi_init.c" left="28" top="118" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="6" y="176" useTextEdit="1" openedFrom="/home/alireza/Programming/test/stm32h7_flashloader/Src/FlashPrg.c" path="Src/hal/qspi.c" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="17" y="101" useTextEdit="1" path="Src/hal/qspi.h" left="0" top="68" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="75" y="46" useTextEdit="1" openedFrom="/home/alireza/Programming/test/stm32h7_flashloader/Src/qspi_init.c" path="Src/hal/gpio.c" left="0" top="29" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="258" useTextEdit="1" path="Src/thumb_crt0.s" left="0" top="237" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="21" y="23" useTextEdit="1" path="Src/FlashDev.c" left="0" top="3" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="42" useTextEdit="1" path="Src/FlashOS.h" left="0" top="36" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="42" useTextEdit="1" path="Src/FlashOS.h" left="0" top="17" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="15" useTextEdit="1" path="Src/hal/stm32h7_regs.h" left="0" top="15" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="Src/hal/gpio.h" left="0" top="0" codecName="Default"/>
  </Files>
- <EMStudioWindow activeProject="FlashLoader" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3711"/>
+ <EMStudioWindow activeProject="FlashLoader" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>
