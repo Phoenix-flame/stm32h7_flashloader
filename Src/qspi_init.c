@@ -89,19 +89,19 @@ void clock_setup(void)
 	/* setup pll */
 	/*  disable pll1 */
 	RCC_CR &= ~(RCC_CR_PLL1ON);
-	while ((RCC_CR & RCC_CR_PLL1RDY)) {
-	}
+	while ((RCC_CR & RCC_CR_PLL1RDY)) { }
 	/* Configure PLL1 as clock source:
-	 * OSC_HSE = 64 MHz
-	 * VCO = 640MHz
-	 * pll1_p = 320MHz / pll1_q = 320MHz*/
+	 * OSC_HSI = 64 MHz
+	 * VCO = (64/8) * 120 = 960MHz
+	 * pll1_p = 480MHz / pll1_q = 480MHz*/
 	divm = 8;
-	divn = 80;
+	divn = 120;
 	divp = 2;
-	divq = 2;
+	divq = 8;
 	divr = 2;
 
 	/*  PLL SRC = HSE */
+        RCC_PLLCKSELR &= 0x0000;
 	RCC_PLLCKSELR |= (divm << 4 ) | 0x0;
 	RCC_PLL1DIVR  |= ((divr - 1) << (24)) | ((divq - 1) << (16)) | ( (divp - 1) << 9) | (divn - 1);
 
@@ -118,7 +118,7 @@ void clock_setup(void)
 	FLASH_FACR &=0xfffffff0;
 	FLASH_FACR |= 0xa;
 
-	/* set HPRE (/2) DI clk --> 160MHz */
+	/* set HPRE (/2) DI clk --> 240MHz */
 	RCC_D1CFGR |= (4<<4)|8;
         RCC_D2CFGR |= (4<<4)|(4<<8);
         RCC_D3CFGR |= (4<<4);

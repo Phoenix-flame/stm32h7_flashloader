@@ -13,7 +13,7 @@ Purpose : Flash device description Template
 
 struct FlashDevice const FlashDevice __attribute__ ((section ("DevDscr"))) =  {
   ALGO_VERSION,              // Algo version
-  "STM32H7 QSPI", // Flash device name
+  "STM32H7 QSPI",            // Flash device name
   ONCHIP,                    // Flash device type
   0x90000000,                // Flash base address
   0x01000000,                // Total flash device size in Bytes (16 MB)
