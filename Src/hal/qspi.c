@@ -155,7 +155,7 @@ void quadspi_init(struct qspi_params *params, void *base)
     QUADSPI_CR |= QUADSPI_CR_PRESCALER(1) | QUADSPI_CR_SSHIFT;
     QUADSPI_DCR = QUADSPI_DCR_FSIZE_16MB | QUADSPI_DCR_CSHT(1);
     
-    QUADSPI_CR |= (1 << 7);
+    QUADSPI_CR |= (0 << 7);
     QUADSPI_CR |= QUADSPI_CR_EN;
 
         quadspi_reset_memory(base);
